@@ -1,11 +1,19 @@
-package com.kloc.atipera.responses;
+package com.kloc.atipera.models;
+
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Repository {
+    @Getter
+    @Setter
     private String repositoryName;
+    @Getter
+    @Setter
     private String ownerName;
+    @Getter
     private final List<Branch> branches;
 
     public Repository(String repositoryName, String ownerName) {
@@ -16,25 +24,5 @@ public class Repository {
 
     public void addBranch(Branch branch){
         branches.add(branch);
-    }
-
-    public List<Branch> getBranches() {
-        return branches;
-    }
-
-    public String getRepositoryName() {
-        return repositoryName;
-    }
-
-    public void setRepositoryName(String repositoryName) {
-        this.repositoryName = repositoryName;
-    }
-
-    public String getOwnerName() {
-        return ownerName;
-    }
-
-    public void setOwnerName(String ownerName) {
-        this.ownerName = ownerName;
     }
 }

@@ -1,27 +1,19 @@
 package com.kloc.atipera.responses;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
 public class ErrorResponse implements Response{
-    private String status;  //responseCode
-    private String message; //whyHasItHappened
+    @Getter
+    @Setter
+    private String status;
+    @Getter
+    @Setter
+    private String message;
 
-    public ErrorResponse(String status, String message) {
+    public ErrorResponse(String status, String message){
         this.status = status;
         this.message = message;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
     }
 }
