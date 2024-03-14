@@ -1,1 +1,1 @@
-Zadanie rekrutacyjne dla Atipera
+Microservice which returns information about github user's repositories.

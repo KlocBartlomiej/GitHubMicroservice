@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.kloc</groupId>
-	<artifactId>atipera</artifactId>
+	<artifactId>gitmicroservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>atipera</name>
-	<description>Zadanie rekrutacyjne dla Atipera</description>
+	<name>gitmicroservice</name>
+	<description>Microservice which returns information about github user's repositories.</description>
 	<properties>
 		<java.version>21</java.version>
 	</properties>
@@ -30,12 +30,6 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.json/json -->
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20240205</version>
 		</dependency>
 	</dependencies>
 
